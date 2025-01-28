@@ -1,1 +1,2 @@
-# CS50-zip
+# CS50 projects
+
