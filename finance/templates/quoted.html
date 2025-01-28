@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quoted Result
+{% endblock %}
+
+{% block main %}
+<h2>Quoted Result</h2>
+<p><strong>Company name:</strong> {{ stock_name }}</p>
+<p><strong>Symbol:</strong> {{ stock_symbol }}</p>
+<p><strong>Current Price:</strong> {{ stock_price }}</p>
+<a href="/quote" class="btn btn-secondary mt-3">New Quote</a>
+{% endblock %}

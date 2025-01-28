@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #FAF3DD;
+    text-align: center;
+}
+h1 {
+    color: #A51C30; /* Rojo Harvard */
+    font-size: 60px;
+    font-style: bold;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+}
+h2{
+    padding: 25px;
+    font-size: 45px;
+}
+
+h3{
+    padding: 25px;
+}
+ol{
+    padding = 0;
+    font-size: 35px;
+}
+
+.mt-3 {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    padding: 15px 25px; /* Ajusta el tamaño del botón */
+}
+
+.custom-class {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.custom-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-top: 50px;
+    height: 300px;
+
+}
+.custom-card .card-body{
+    margin-top: auto;
+    font-size: 25px;
+}
+
+.row > .col-md-3:not(:last-child) {
+    margin-right: 35px; /* Añade espacio horizontal entre las cartas */
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.card-description {
+    margin-top: 10px;
+    color: #6c757d; /* Color gris para diferenciar del título */
+    font-size: 1.4rem; /* Tamaño de fuente más pequeño */
+}
+
+
+.task-btn {
+    width: 48%; /* Hace que los botones de Add y Delete tengan el mismo ancho */
+    height: 50px;
+    margin-top: 0;
+}
+
+#agregarTarea,
+#borrarTodas {
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los botones */
+}
+
+#listaTareas li {
+    display: flex;
+    justify-content: space-between; /* Separa el texto y el botón de eliminar */
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#listaTareas button {
+    margin-left: auto; /* Mueve el botón de eliminar al extremo derecho */
+}
+
+
+
