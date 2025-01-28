@@ -1,0 +1,19 @@
+sort1 uses:  Bubblesort
+
+How do you know?:
+due to the fact that it is way slower with bigger numbers(time ./sort1 random50000 = 6.8 s)
+but still performs well for the sorted50000 with a 0.5 s sort.
+
+sort2 uses: Mergesort
+
+How do you know?:
+Owing to the fact that is the one that performs with an overall better performance and
+of course with an even shorter sort in the already sorted .txt
+
+sort3 uses: Selection sort
+
+How do you know?:
+Because is the one that performs aproximately the same with sorted or random elements.
+This inquires that there is no base case nor we save any steps from the worst case. This could also apply to
+mergesort but the running times are way slower that the sort2: 3s vs 0.5 of the sort2 with O(n log n).
+

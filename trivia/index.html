@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // opcion multiple
+            const buttons = document.querySelectorAll('button');
+            const p1Message = document.getElementById('p1Message');
+
+            buttons.forEach(button =>
+            {
+                button.addEventListener('click', function() {
+
+                    // restablecer el color de botones
+                    buttons.forEach(btn => btn.style.backgroundColor = '');
+                    if (button.dataset.correct === 'true')
+                    {
+                        button.style.backgroundColor = 'green';
+                        p1Message.textContent = 'Correct!';
+                    }
+                    else
+                    {
+                        button.style.backgroundColor = 'red';
+                        p1Message.textContent = 'Incorrect';
+                    }
+                });
+            });
+
+        // respuesta libre
+        const response = document.getElementById('response');
+        const checkAnswerButton = document.getElementById('checkAnswerButton');
+        const p2Message = document.getElementById('p2Message');
+
+        checkAnswerButton.addEventListener('click', function()
+        {
+            const userResponse = response.value.trim().toLowerCase();
+
+            //limpiar mensaje anterior
+            p2Message.textContent = '';
+
+            // restablecer el color de botones
+            buttons.forEach(btn => btn.style.backgroundColor = '');
+            if (userResponse === 'real madrid')
+            {
+                response.style.backgroundColor = 'green';
+                p2Message.textContent = 'Correct!';
+            }
+            else
+            {
+                response.style.backgroundColor = 'red';
+                p2Message.textContent = 'Incorrect';
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2 class = 'part1'>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3> What is the best backend language ever? </h3>
+                <button data-correct = 'false'> C </button>
+                <button data-correct = 'false'> Rust </button>
+                <button data-correct = 'true'> Go </button>
+                <p id= "p1Message"></p>
+
+            </div>
+
+            <div class="section">
+                <h2 class = 'part2'>Part 2: Free Response</h2>
+                <hr>
+
+                 <h3>What is the best football club in the world, history, universe and beyond?</h3>
+                 <input type="text" id="response" placeholder="Type your answer here">
+                 <button id= "checkAnswerButton">Submit</button>
+                 <p id= "p2Message"></p>
+            </div>
+        </div>
+    </body>
+</html>

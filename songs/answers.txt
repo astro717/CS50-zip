@@ -1,0 +1,8 @@
+- By taking all the energy, valence and danceability of every song
+  and making the avg of each so we can see wich category is more predominant
+  and infer wether the listener's aura is more in the energized or melancolic side.
+
+- This might not be the most representative way to do it, due to the fact that the
+  listener might have spend most of his time in the first most listened songs and
+  in out formula the weight of the 100 songs is the same even if one song has been
+  listened way more times than other.
